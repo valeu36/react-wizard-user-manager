@@ -12,7 +12,7 @@ import EditUserPage from '../pages/users/EditUserPage';
 import NewUserPage from '../pages/users/NewUserPage';
 
 const Routes = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.REACT_APP_PUBLIC_URL}>
     <MainLayout>
       <Switch>
         <Route exact path={ROUTES.home} component={HomePage} />
