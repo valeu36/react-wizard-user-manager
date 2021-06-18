@@ -1,0 +1,31 @@
+.cropWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+
+  &Visible {
+    display: block;
+  }
+
+  & canvas {
+    position: absolute;
+    z-index: 130;
+    top: 50px;
+    left: 50px;
+    display: none;
+  }
+}
+
+.buttonWrapper {
+  position: absolute;
+  z-index: 120;
+  bottom: 20px;
+  left: calc(50% - 50px);
+  & button {
+    position: relative;
+  }
+}

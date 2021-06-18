@@ -1,0 +1,30 @@
+@import '../../../assets/scss/variables';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $royal-blue;
+  width: 100%;
+  color: $white;
+  padding: 16px 24px;
+
+  @media screen and (max-width: $bp-mobile-l) {
+    flex-direction: column;
+  }
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+
+  @media screen and (max-width: $bp-mobile-l) {
+    align-self: flex-start;
+    width: 100%;
+    margin-top: 16px;
+  }
+}

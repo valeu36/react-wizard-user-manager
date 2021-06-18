@@ -1,0 +1,21 @@
+@import '../../../assets/scss/variables';
+
+.field {
+  display: flex;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid $spindle;
+  padding: 10px;
+  height: 80px;
+  overflow: hidden;
+  resize: none;
+
+  &:focus {
+    border: 1px solid $columbia-blue;
+  }
+
+  &Error {
+    border: 1px solid $red;
+  }
+}

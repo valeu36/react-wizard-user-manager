@@ -1,0 +1,20 @@
+@import '../../../assets/scss/variables';
+
+.button {
+  padding: 8px 8px;
+  font-size: 14px;
+  border: none;
+  color: $spindle;
+  min-width: fit-content;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  display: flex;
+
+  &Icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+  }
+}

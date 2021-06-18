@@ -1,0 +1,37 @@
+@import '../../../assets/scss/variables';
+
+.formInner {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: $bp-tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.avatarContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatarButton {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: $bp-tablet) {
+    align-items: start;
+    margin-left: 50px;
+  }
+}
+
+.fieldsContainer {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (max-width: $bp-tablet) {
+    width: 100%;
+  }
+}

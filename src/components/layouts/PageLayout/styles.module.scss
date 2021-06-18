@@ -1,0 +1,26 @@
+@import '../../../assets/scss/variables';
+
+.wrapper {
+  width: $bp-laptop;
+  display: flex;
+  flex-direction: column;
+  //margin: 0 auto;
+
+  @media screen and (max-width: $bp-tablet) {
+    width: 100%;
+  }
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 24px;
+  color: $san-juan;
+}
+
+.content {
+  background-color: $ghost-white;
+}

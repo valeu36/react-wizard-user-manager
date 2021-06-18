@@ -1,0 +1,18 @@
+@import '../../assets/scss/variables';
+
+.wizardWrapper {
+  padding: 60px 100px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+
+  @media screen and (max-width: $bp-tablet) {
+    justify-content: space-between;
+    padding: 20px 14px;
+  }
+}
+
+.wrapper {
+  position: relative;
+}

@@ -1,0 +1,22 @@
+@import '../../../assets/scss/variables';
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  @media screen and (max-width: $bp-tablet) {
+    justify-content: space-between;
+  }
+
+  &OneButton {
+    justify-content: flex-end;
+  }
+}
+
+.next {
+  margin-left: 100px;
+  @media screen and (max-width: $bp-tablet) {
+    margin-left: 0;
+  }
+}

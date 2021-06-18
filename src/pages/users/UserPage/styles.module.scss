@@ -1,0 +1,21 @@
+@import '../../../assets/scss/variables';
+
+.button {
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  top: -60px;
+
+  & svg {
+    position: relative;
+    top: 5px;
+  }
+
+  @media screen and (max-width: $bp-mobile-l) {
+    top: -56px;
+
+    & svg {
+      top: 3px;
+    }
+  }
+}

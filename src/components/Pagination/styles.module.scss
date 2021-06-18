@@ -1,0 +1,12 @@
+@import '../../assets/scss/variables';
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+
+  @media screen and (max-width: $bp-mobile-l) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

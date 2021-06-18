@@ -1,0 +1,29 @@
+@import '../../../../assets/scss/variables';
+
+.block {
+  display: flex;
+}
+
+.title {
+  display: flex;
+  width: 120px;
+  color: $san-juan;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.value {
+  width: 220px;
+  margin-left: 80px;
+  color: $bermuda-grey;
+
+  @media screen and (max-width: $bp-mobile-l) {
+    margin-left: 0;
+  }
+}
+
+.title,
+.value {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

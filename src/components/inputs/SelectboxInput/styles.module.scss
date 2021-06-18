@@ -1,0 +1,30 @@
+@import '../../../assets/scss/variables';
+
+.select,
+.selectError {
+  min-width: 100%;
+  max-width: 100%;
+  [class$='-control'] {
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    outline: #4f85e4;
+    &:hover {
+      box-shadow: none;
+      border: 1px solid $columbia-blue;
+    }
+  }
+}
+
+.select {
+  [class$='-control'] {
+    border: 1px solid $spindle;
+  }
+}
+
+.selectError {
+  [class$='-control'] {
+    border: 1px solid $red;
+  }
+}

@@ -1,0 +1,71 @@
+@import '../../../../assets/scss/variables';
+
+.table {
+  min-width: 100%;
+  border-spacing: 0;
+  position: relative;
+
+  @media screen and (max-width: $bp-tablet) {
+    max-width: 100vw;
+    overflow-y: scroll;
+    display: block;
+  }
+}
+
+.header {
+  background-color: $royal-blue;
+  min-width: 100%;
+}
+
+.row {
+  min-width: 100%;
+}
+
+.cell {
+  text-align: left;
+  font-weight: normal;
+  color: $white;
+  padding: 14px 0;
+  border-bottom: 30px solid $white;
+  min-width: 200px;
+
+  &Avatar {
+    min-width: 80px;
+  }
+
+  &Contacts {
+    min-width: 260px;
+  }
+
+  &Buttons {
+    min-width: 40px;
+  }
+}
+
+.body {
+  min-width: 100%;
+  background: #ffffff;
+}
+
+.body tr:nth-child(odd) {
+  background-color: $ghost-white;
+}
+
+.wrapper {
+  min-height: 440px;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  display: flex;
+  background-color: $alice-blue;
+}
+
+.empty {
+  font-size: 32px;
+  color: $horizon;
+  position: absolute;
+  width: 300px;
+  top: 50%;
+  left: calc(50% - 150px);
+  font-weight: bold;
+}
